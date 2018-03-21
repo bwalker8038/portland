@@ -1,0 +1,41 @@
+.list-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.list-item:hover {
+  box-shadow: 1px 1px 1px 0px #8888888c;
+  margin-bottom: 0;
+}
+
+.list-item:hover > .list-item__artwork {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.list-item:hover > .list-item__action {
+  height: 35px;
+  padding: 10px 0;
+}
+
+.list-item__artwork {
+  border-radius: 3px;
+  height: 233px;
+  width: 166px;
+}
+
+.list-item__action {
+  background: #000;
+  border: none;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+}
